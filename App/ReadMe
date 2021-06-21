@@ -1,0 +1,12 @@
+Instructions to run the app
+
+For running the application on flask server run the command - python3 flask_micro.py
+The model and other files are loaded into the app and you can test it out by
+sending a request to 0.0.0.0:5000/recommendation?user="AZZSHWHHCLQS" or you can
+access swagger by going to 0.0.0.0:5000/ on your web browser.
+
+To Build the docker container run -
+docker build -t recommendation .
+
+The container is hosted on an AWS ECS cluster, the swagger can be accessed with the link -
+http://ec2-54-173-193-54.compute-1.amazonaws.com:5000
